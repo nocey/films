@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#previous{
+    padding:0.5rem 1rem ;
+    border : 1px solid black;
+    border-radius: 0.3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+#previous:hover{
+    color: yellow;
+    background-color: black;
+}
+
+#add{
+    padding:0.5rem 1rem ;
+    border : 1px solid black;
+    border-radius: 0.3rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+#add:hover{
+    color: yellow;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+#pager{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+#film-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.film {
+    width: 22vw;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    background-color:#e0e0e0;
+    transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 600px;
+}
+.film:hover{
+    width: 24vw;
+background-color: rgba(185,185,194,1);
+}
+.film:hover img {
+    width: 22vw;
+}
+
+.film img{
+    width: 20vw;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 1rem auto 0 auto;
+    transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.film h1{
+    display: block;
+    position: absolute;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.film h3{
+    color: black;
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 20vw;
+    text-align: center;
+}
+
+.film p{
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 20vw;
+    text-align: justify;
+}
+
+.film-js{
+    width: 70vw;
+    
+}
+
+.genres{
+    width: 100px !important;
+    background-color: aqua;
+}
